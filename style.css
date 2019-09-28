@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css?family=Marck+Script&subset=cyrillic');
+
+body{
+    background: aqua url(img/2.jpg) repeat fixed;
+}
+
+#header{
+    width: 960px;
+    margin: 20px auto;
+    background: rgba(87, 14, 14, 0.9) fixed;
+    color: #0080ff;
+    font-family: 'Marck Script', cursive;
+    height: 105px;
+    position: relative;
+}
+
+#header h1{
+    position: relative;
+    left: 100px;
+    top: 20px;
+}
+
+#header .logo{
+    display: block;
+    position: absolute;
+    top: 40px;
+    left: 800px;
+}
+
+#content{
+    width: 960px;
+    margin: 40px auto;
+    background-color: rgba(165, 165, 165, 0.8);
+    height: 1500px;
+}
+
+.p1{
+    margin: 0 auto;
+    font-weight: 500;
+    color: #6ed0f4;
+    text-align: justify;
+    text-decoration: none;
+    text-transform: none;
+    text-indent: 40px;
+    /*letter-spacing: 2px;
+    word-spacing: 5px;
+    line-height: 25px;*/
+    font-family: 'Marck Script', cursive;
+    font-style: italic;
+    font-size: 24px;
+}
+
+.p2{
+    font-weight: bold;
+    color: blue;
+}
+
+#styles li{
+    color: #fff;
+    font-family: 'Marck Script', cursive;
+    list-style-type: circle;
+    list-style-position: inside;
+}
+
+#styles li:hover{
+    background: rgba(77, 77, 77, 0.61);
+}
+
+#navigation{
+    height: 44px;
+}
+
+#navigation ul li{
+    float: left;
+    list-style-position: inside;
+    list-style-type: none;
+    position: relative;
+}
+
+#navigation ul li a{
+    color: #fff;
+    padding: 0 40px;
+    text-decoration: none;
+    line-height: 44px;
+    display: block;
+    height: 44px;
+}
+
+#navigation li a:hover{
+    background: rgba(92, 54, 54, 0.7);
+    text-decoration: underline;
+}
+
+#navigation .dropdown {
+    position: absolute;
+    top: 100%;
+    width: 150px;
+    background: rgba(87, 14, 14, 0.9);
+    padding: 0 0;
+    display: none;
+}
+
+#navigation li:hover .dropdown{
+    display: block;
+}
+
+#navigation .dropdown li{
+    width: 150px;
+    height: 35px;
+}
+
+#navigation .dropdown li a{
+    line-height: 35px;
+    height: 35px;
+}
+h1 {
+    
+}
+
+.search {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+#article {
+    width: 740px;
+    padding-right: 20px;
+    float: left;
+}
+
+#article > p {
+    background: rgba(255, 0, 0, 0);
+}
+
+#article .combinator ~ p {
+    background: rgba(29, 0, 255, 0);
+}
+
+#sidebar {
+    width: 200px;
+    float: left;
+}
+
+#futor {
+    width: 940px;
+    margin: 0 auto;
+    background-color: rgb(165, 165, 165);
+    font-family: 'Marck Script', cursive;
+    height: 100px;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+#content p{
+    color: #fff;
+}
+
+#sidebar ul li{
+    color: #fff;
+}
+
+#fixed {
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.modul {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: #fff;
+    left: 50%;
+    top: 50%;
+    margin-left: -150px;
+    margin-top: -150px;
+}
+
+.pseudo {
+    color: aqua;
+}
+
+.pseudo:hover {
+   color: gold;
+}
+
+.pseudo:visited {
+   color: red;
+}
+
+.pseudo:focus {
+   color: green;
+}
+
+#article p:first-child {
+    color: black;
+}
+
+#article p:last-child {
+    color: orange;
+}
+
+::selection {
+    background: #0058ff;
+    color: chartreuse;
+}
+
+a[target]{
+    color: blueviolet;
+}
+
+input[type="text"]{
+    border: 2px solid blueviolet;
+}
+
+input[type="button"]{
+    border: 2px solid darkorange;
+    color: darkorange;
+    background: blueviolet;
+}
+.icon {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    background-image: url(img/sprit.png);
+}
+
+.icon.icon1:hover {
+    background-position: 0 0;
+}
+
+.icon.icon1 {
+    background-position: 0 -60px;
+}
+
+.icon.icon2:hover {
+    background-position: -60px 0;
+}
+
+.icon.icon2 {
+    background-position: -60px -60px;
+}
+
+.icon.icon3:hover {
+    background-position: -120px 0;
+}
+
+.icon.icon3 {
+    background-position: -120px -60px;
+}
+
+.icon.icon4:hover {
+    background-position: -180px 0;
+}
+
+.icon.icon4 {
+    background-position: -180px -60px;
+}
