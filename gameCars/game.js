@@ -12,8 +12,19 @@ bg.src = 'img/bg.png';
 document.addEventListener('keydown', z);
 document.addEventListener('keyup', x);
 
+document.addEventListener('touchstart', function (e) {
+    if (e.changedTouches[0].pageX != null){
+        z();
+    }
+});
+document.addEventListener('touchend', function (e) {
+    if (e.changedTouches[0].pageX){
+        x();
+    }
+});
+
 function z() {
-    if (carGame.x == 65){
+    if (carGame.x <= 65){
         carGame.x += 100;
     }
 }
